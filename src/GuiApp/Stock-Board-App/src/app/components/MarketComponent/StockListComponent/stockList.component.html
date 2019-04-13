@@ -1,0 +1,21 @@
+
+  <div>
+  
+    <table class="table">
+      <thead class="table-dark">
+        <tr>
+          <td scope="col">Stock Id</td>
+          <td>Stock Name</td>
+          <td>Price</td>
+        </tr>
+      </thead>
+  
+      <tbody class="table table-hover">
+        <tr *ngFor="let stock of stocks ">
+          <td>{{ stock.id }}</td>
+          <td>{{ stock.name }}</td>
+          <td>{{ stock.price }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
